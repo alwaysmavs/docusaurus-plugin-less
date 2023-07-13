@@ -24,7 +24,7 @@ module.exports = function (context, options)
                                                 modules: {
                                                     localIdentName: isProd
                                                         ? "[sha1:hash:hex:5]"
-                                                        : "[name]_[local]",
+                                                        : "[local]_[path][name]",
                                                     exportOnlyLocals: isServer
                                                 },
                                                 importLoaders: 1,
